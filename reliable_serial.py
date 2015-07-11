@@ -5,11 +5,7 @@ import time
 import usb
 import os
 from time import sleep
-from pyudev import Context
-from usbid.device import DeviceNode
-from usbid.device import usb_roots
 from usbid.device import device_list
-from usbid.device import device_by_path
 
 #Another solution - add the following line to /etc/udev/rules.d/70-persistent-usb.rules
 #SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0001", SYMLINK +="YOUR_SYMLINK"
