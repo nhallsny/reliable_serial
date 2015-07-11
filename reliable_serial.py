@@ -1,14 +1,9 @@
 #!/user/bin/env python
 import serial
 import threading
-import time
 import usb
-import os
 from time import sleep
 from usbid.device import device_list
-
-#Another solution - add the following line to /etc/udev/rules.d/70-persistent-usb.rules
-#SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0001", SYMLINK +="YOUR_SYMLINK"
 
 # Instructions
 # ---------------------------------
